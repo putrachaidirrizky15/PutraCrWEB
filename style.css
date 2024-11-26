@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    background-image: url(foto/asri.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background: #000;
+    box-shadow: 0 0 50px #0ef;
+    border-radius: 20px;
+    padding: 40px;
+}    
+
+h1 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+h3 {
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.input-group {
+    position: relative;
+    margin: 8px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 13px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-group input {
+    width: 32-px;
+    height: 35px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    transition: .5s;
+    
+}
+.input-name {
+    font-size: 13px;
+    color: #fff;
+}
+
+.input-date {
+    font-size: 15px;
+    color: #fff;
+}
+
+.input-eskul {
+    font-size: 13px;
+    color: #fff;
+    font-family: Calibri Light;
+}
+
+button {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background: #0ef;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: -5px;
+}
+
+.wrapper:hover {
+    animation: animate 1s linear infinite;
+}
+ 
+@keyframes animate {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
